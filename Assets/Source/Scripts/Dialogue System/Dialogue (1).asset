@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbd50dd58ba7aa4787101233a68edf1, type: 3}
+  m_Name: Dialogue (1)
+  m_EditorClassIdentifier: 
+  <Speeches>k__BackingField:
+  - <SpeakerName>k__BackingField: Mimi
+    <Speachs>k__BackingField:
+    - <Text>k__BackingField: Hi!
+      <Completed>k__BackingField: 1
+    - <Text>k__BackingField: How are you?
+      <Completed>k__BackingField: 1
+    <Answers>k__BackingField:
+    - <AnswerText>k__BackingField:
+        <Text>k__BackingField: I am fine
+        <Completed>k__BackingField: 0
+      <Speachs>k__BackingField:
+      - <SpeakerName>k__BackingField: 
+        <Speachs>k__BackingField:
+        - <Text>k__BackingField: 
+          <Completed>k__BackingField: 0
+        <Answers>k__BackingField: []
+      <OnChoice>k__BackingField:
+      - m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11500000, guid: 5127c624b9eac33489ba43f39f7c7f40, type: 3}
+            m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_MethodName: set_name
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      <OnChoiceEvents>k__BackingField: []
+    - <AnswerText>k__BackingField:
+        <Text>k__BackingField: I am sad
+        <Completed>k__BackingField: 0
+      <Speachs>k__BackingField:
+      - <SpeakerName>k__BackingField: 
+        <Speachs>k__BackingField:
+        - <Text>k__BackingField: 
+          <Completed>k__BackingField: 0
+        <Answers>k__BackingField: []
+      <OnChoice>k__BackingField: []
+      <OnChoiceEvents>k__BackingField: []
