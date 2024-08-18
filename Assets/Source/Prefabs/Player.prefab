@@ -255,6 +255,7 @@ MonoBehaviour:
   steeringRange: 30
   steeringRangeAtMaxSpeed: 10
   centreOfGravityOffset: -1
+  rigidBody: {fileID: 0}
 --- !u!114 &1767315813274638907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,6 +795,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4416099266299356405}
   - component: {fileID: 1994282501325764979}
+  - component: {fileID: 8644229010557994191}
+  - component: {fileID: 8963587515754552005}
+  - component: {fileID: 9124249025797211805}
   m_Layer: 0
   m_Name: Grabber Component
   m_TagString: Untagged
@@ -830,8 +834,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _grabberPoint: {fileID: 4416099266299356405}
   _craneController: {fileID: 1767315813274638907}
+  _fixedJoint: {fileID: 8963587515754552005}
+  _collider: {fileID: 9124249025797211805}
+  _carControl: {fileID: 3204592713993016856}
   _grabDistance: 1
+  _grabPower: 0
   _garbageLayerMask: 6
+--- !u!54 &8644229010557994191
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042293986137232492}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!138 &8963587515754552005
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042293986137232492}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!135 &9124249025797211805
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6042293986137232492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.005
+  m_Center: {x: 0, y: 0, z: -0.002}
 --- !u!1 &6604302530060257266
 GameObject:
   m_ObjectHideFlags: 0

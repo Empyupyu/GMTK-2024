@@ -10,7 +10,7 @@ public class CarControl : MonoBehaviour
     public float centreOfGravityOffset = -1f;
 
     WheelControl[] wheels;
-    Rigidbody rigidBody;
+    public Rigidbody rigidBody;
 
     // Start is called before the first frame update
     void Start()

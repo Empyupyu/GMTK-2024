@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -19,11 +20,12 @@ public class CraneController : MonoBehaviour
 
     public void SetPosition(Vector3 pos)
     {
-        pos.x = Mathf.Clamp(pos.x, _minimumPositionX, _maximumPositionX);
-        pos.y = Mathf.Clamp(pos.y, _minimumPositionY, _maximumPositionY);
-        pos.z = Mathf.Clamp(pos.z, _minimumPositionZ, _maximumPositionZ);
-        
-        _targetPoint.localPosition = pos;
+        // pos.x = Mathf.Clamp(pos.x, _minimumPositionX, _maximumPositionX);
+        // pos.y = Mathf.Clamp(pos.y, _minimumPositionY, _maximumPositionY);
+        // pos.z = Mathf.Clamp(pos.z, _minimumPositionZ, _maximumPositionZ);
+        //
+        // _targetPoint.DOLocalMove(pos, 1f);
+        _targetPoint.DOMove(pos, 1f);
     }
     
     void Update()
