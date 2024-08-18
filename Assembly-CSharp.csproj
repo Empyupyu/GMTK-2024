@@ -90,6 +90,7 @@
      <Compile Include="Assets\Source\Scripts\Systems\Game\PlayerMovementSystem.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\CameraLoadingSystem.cs" />
      <Compile Include="Assets\Source\Scripts\MainPlayerCamera.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Loading\LoadingEndSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMPro.cginc" />

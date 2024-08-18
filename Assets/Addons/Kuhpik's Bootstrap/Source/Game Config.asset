@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0bbf493a6018b41b94c2288283a11a, type: 3}
   m_Name: Game Config
   m_EditorClassIdentifier: 
-  <MoveSpeed>k__BackingField: 10
+  <MoveSpeed>k__BackingField: 20
+  <MaxMovementSpeed>k__BackingField: 30
+  <RotationSpeed>k__BackingField: 5
   <PlayerPrefab>k__BackingField: {fileID: 6493817565910562113, guid: b86d92ee1b184c745b42052eb1427608, type: 3}

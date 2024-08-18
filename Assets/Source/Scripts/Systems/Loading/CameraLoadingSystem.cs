@@ -9,7 +9,9 @@ namespace GarbageScaler.Systems.Loading
             game.MainPlayerCamera = FindObjectOfType<MainPlayerCamera>();
 
             var virtualCamera = game.MainPlayerCamera.VirtualCamera;
-            virtualCamera.Follow = game.Player.transform;
+            var playerTransform = game.Player.transform;
+            virtualCamera.Follow = playerTransform;
+            virtualCamera.LookAt = playerTransform;
         }
     }
 }
