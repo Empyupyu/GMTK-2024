@@ -91,6 +91,9 @@
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System\GameSystemWithScreen.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces\ICommand.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\LoadingEndSystem.cs" />
+     <Compile Include="Assets\Source\Scripts\s.cs" />
+     <Compile Include="Assets\Source\Scripts\WheelControl.cs" />
+     <Compile Include="Assets\Source\Scripts\CarControl.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMPro.cginc" />
