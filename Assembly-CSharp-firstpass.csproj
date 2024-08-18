@@ -11,7 +11,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>GarbageScaler</RootNamespace>
     <ProjectGuid>{0a00ee35-e163-b3e9-4fa3-8f55c3b72077}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -42,13 +42,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
-     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
-     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
-     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
-     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Folder Include="Assets\Plugins" />
      <Folder Include="Assets\Plugins\Demigiant\DOTween\Modules" />
      <Folder Include="Assets\Plugins\Demigiant\DOTween" />
@@ -291,11 +291,26 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
-     <Reference Include="Newtonsoft.Json">
-     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+     <Reference Include="Unity.Burst.Unsafe">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>C:\My projects\GMTK-2024\Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+     <HintPath>C:\My projects\GMTK-2024\Assets\Addons\DOTween\DOTween.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Pdb">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Rocks">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.burst@1.6.6\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>C:\My projects\GMTK-2024\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Android.Types">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -672,26 +687,20 @@
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Services.Core.Analytics">
-     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Services.Core.Environments">
-     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -708,19 +717,41 @@
      <Reference Include="Unity.Services.Core">
      <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Animation.Rigging">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     </Reference>
+     <Reference Include="Cinemachine">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core.Analytics">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="com.unity.cinemachine.editor">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Services.Core.Environments">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Animation.Rigging.Editor">
+     <HintPath>C:\My projects\GMTK-2024\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Supyrb.Signals.csproj">
       <Project>{5347ef39-0afc-784c-306f-f626e00e33ef}</Project>
       <Name>Supyrb.Signals</Name>
-    </ProjectReference>
-    <ProjectReference Include="Supyrb.Signals.Editor.csproj">
-      <Project>{97cb3908-9682-a79b-d8fb-519e309c93dd}</Project>
-      <Name>Supyrb.Signals.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="NaughtyAttributes.Editor.csproj">
-      <Project>{27b5b565-279e-22d0-8c46-033125b2b80a}</Project>
-      <Name>NaughtyAttributes.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NaughtyAttributes.Test.csproj">
       <Project>{66f9eee8-9f96-77d8-19d2-c6150c496235}</Project>
@@ -733,6 +764,18 @@
     <ProjectReference Include="MackySoft.SerializeReferenceExtensions.csproj">
       <Project>{f6a51e78-5873-19f0-aca9-97b4aa65c173}</Project>
       <Name>MackySoft.SerializeReferenceExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="Sirenix.OdinSerializer.csproj">
+      <Project>{c62b4aef-94cf-5f11-91d8-c24ccd5d00f1}</Project>
+      <Name>Sirenix.OdinSerializer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Supyrb.Signals.Editor.csproj">
+      <Project>{97cb3908-9682-a79b-d8fb-519e309c93dd}</Project>
+      <Name>Supyrb.Signals.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="NaughtyAttributes.Editor.csproj">
+      <Project>{27b5b565-279e-22d0-8c46-033125b2b80a}</Project>
+      <Name>NaughtyAttributes.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="NaughtyAttributes.Core.csproj">
       <Project>{95617692-56c4-3da2-24f7-3e4fc6bf60f4}</Project>
