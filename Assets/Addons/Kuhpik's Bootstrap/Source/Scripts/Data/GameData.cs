@@ -11,5 +11,6 @@ namespace Kuhpik
     {
         public Player Player { get; set; }
         public MainPlayerCamera MainPlayerCamera { get; set; }
+        public int Money { get; set; }
     }
 }

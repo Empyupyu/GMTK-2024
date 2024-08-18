@@ -91,12 +91,23 @@
      <Compile Include="Assets\Source\Scripts\Systems\Loading\CameraLoadingSystem.cs" />
      <Compile Include="Assets\Source\Scripts\MainPlayerCamera.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\LoadingEndSystem.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\GarbageProcessorSystem.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Loading\InitSystem.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\GarbageCollectedSignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Garbage.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\AddMoneySignal.cs" />
+     <Compile Include="Assets\Source\Scripts\GarbageConsumer.cs" />
+     <Compile Include="Assets\Source\Scripts\ProcessedGarbage.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\MoneySystem.cs" />
+     <Compile Include="Assets\Source\Scripts\UIScreens\PlayerStatsUIScreen.cs" />
+     <Compile Include="Assets\Source\Scripts\Extensions\DotWeenExtensions.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\Addons\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\Source\Scripts\Extensions" />
      <Folder Include="Assets\Addons\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Source\Scripts\Systems\Game" />
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source" />
@@ -104,6 +115,7 @@
      <Folder Include="Assets\Addons\NaughtyAttributes\Samples" />
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Interfaces\UI" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <Folder Include="Assets\Source\Scripts\GameSignals" />
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Snippets\Singleton" />
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions" />
      <Folder Include="Assets\Addons\MackySoft" />
@@ -174,6 +186,7 @@
      <Folder Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System" />
      <Folder Include="Assets\Addons\NaughtyAttributes\Samples\DemoScene" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <Folder Include="Assets\Source\Scripts\UIScreens" />
      <Reference Include="UnityEngine">
      <HintPath>D:\Unity\2021.3.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
