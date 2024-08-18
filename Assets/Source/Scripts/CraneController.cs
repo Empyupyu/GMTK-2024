@@ -16,6 +16,15 @@ public class CraneController : MonoBehaviour
     
     [SerializeField] private float _minimumPositionX;
     [SerializeField] private float _maximumPositionX;
+
+    public void SetPosition(Vector3 pos)
+    {
+        pos.x = Mathf.Clamp(pos.x, _minimumPositionX, _maximumPositionX);
+        pos.y = Mathf.Clamp(pos.y, _minimumPositionY, _maximumPositionY);
+        pos.z = Mathf.Clamp(pos.z, _minimumPositionZ, _maximumPositionZ);
+        
+        _targetPoint.localPosition = pos;
+    }
     
     void Update()
     {
