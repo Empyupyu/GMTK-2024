@@ -27,9 +27,20 @@ public class CarControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float vInput = 0;
+        
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
+        {
+             vInput = Input.GetAxis("Vertical");
+        }
 
-        float vInput = Input.GetAxis("Vertical");
-        float hInput = Input.GetAxis("Horizontal");
+        float hInput = 0;
+        
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        {
+            hInput =  Input.GetAxis("Horizontal");
+        }
+        
 
         // Calculate current speed in relation to the forward direction of the car
         // (this returns a negative number when traveling backwards)

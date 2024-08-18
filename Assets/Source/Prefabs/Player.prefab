@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 6493817565910562113}
   - component: {fileID: -4204022804032037646}
   - component: {fileID: 3204592713993016856}
+  - component: {fileID: 1767315813274638907}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -254,6 +255,28 @@ MonoBehaviour:
   steeringRange: 30
   steeringRangeAtMaxSpeed: 10
   centreOfGravityOffset: -1
+--- !u!114 &1767315813274638907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928244429635615588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2bf55d368304bb4833dd72e5ab5d2d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetPoint: {fileID: 7444058451297605721}
+  _moveHorizontalRate: 4
+  _moveVerticalRate: 4
+  _moveZRate: 4
+  _minimumPositionZ: 2
+  _maximumPositionZ: 6
+  _minimumPositionY: 0.79
+  _maximumPositionY: 6.139466
+  _minimumPositionX: -3.6
+  _maximumPositionX: 3.6
 --- !u!1 &1980959833016889410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,5 +1469,10 @@ MeshCollider:
 --- !u!4 &3018191031104898694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2315775072691957563, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
+  m_PrefabInstance: {fileID: 702999047820356029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7444058451297605721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7966610800139022820, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
   m_PrefabInstance: {fileID: 702999047820356029}
   m_PrefabAsset: {fileID: 0}

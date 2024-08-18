@@ -94,6 +94,7 @@
      <Compile Include="Assets\Source\Scripts\s.cs" />
      <Compile Include="Assets\Source\Scripts\WheelControl.cs" />
      <Compile Include="Assets\Source\Scripts\CarControl.cs" />
+     <Compile Include="Assets\Source\Scripts\CraneController.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMPro.cginc" />

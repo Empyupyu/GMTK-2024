@@ -19,16 +19,3 @@ namespace GarbageScaler
         }
     }
 }
-
-public class CraneController : MonoBehaviour
-{
-    [SerializeField] private Transform _targetPoint;
-    
-    void Update()
-    {
-        float vInput = Input.GetAxis("Vertical");
-        float hInput = Input.GetAxis("Horizontal");
-        
-        _targetPoint.localPosition += new Vector3()
-    }
-}
