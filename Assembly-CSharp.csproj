@@ -106,6 +106,8 @@
      <Compile Include="Assets\Source\Scripts\ProcessedGarbage.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces\ICommand.cs" />
      <Compile Include="Assets\Source\Scripts\UnityTools\ScenePhysicsTool.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Ative Ragdoll Bones\PhysicsBone.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Environments" />
@@ -171,6 +173,7 @@
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Assets\Resources" />
      <None Include="Assets\Addons\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <Folder Include="Assets\Source\Scripts\Systems\Upgrades" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Buildings" />
      <Folder Include="Assets\Source\Scripts\Systems\Loading" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
@@ -204,6 +207,7 @@
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Materials" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\package.json" />
+     <Folder Include="Assets\Source\Scripts\Systems\Ative Ragdoll Bones" />
      <Folder Include="Assets\Source\Prefabs" />
      <None Include="Assets\Addons\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\Source\Prefabs\Garbage" />
