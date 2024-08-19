@@ -14,7 +14,7 @@ namespace GarbageScaler.UIScreens
 
         public override void Subscribe()
         {
-            Signals.Get<AddMoneySignal>().AddListener(_ => RefreshUpgrades(), 1);
+            Signals.Get<AddMoneySignal>().AddListener(OnAddMoneySignal, 1);
             CraneUpgrade.OnClick += OnCraneUpgrade;
         }
 
@@ -50,6 +50,8 @@ namespace GarbageScaler.UIScreens
                         });
                 });
         }
+
+        private void OnAddMoneySignal(int _) => RefreshUpgrades();
 
         private void RefreshUpgrades()
         {
