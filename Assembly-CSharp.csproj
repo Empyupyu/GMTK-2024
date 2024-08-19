@@ -121,6 +121,7 @@
      <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSpeedSignal.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Upgrades\CarryUpgrade.cs" />
      <Compile Include="Assets\Source\Scripts\GameSignals\RemoveMoneySignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\AudioSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Environments" />
