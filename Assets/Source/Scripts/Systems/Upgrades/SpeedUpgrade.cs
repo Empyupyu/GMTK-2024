@@ -6,9 +6,9 @@ namespace GarbageScaler
     [CreateAssetMenu]
     public class SpeedUpgrade : Upgrade
     {
-        public override void ApplyUpgrade(PlayerData playerData)
+        public override void ApplyUpgrade(GameData gameData)
         {
-            playerData.MoveSpeed += EffectPerLevel;
+            gameData.MoveSpeed += EffectPerLevel;
             Bootstrap.Instance.SaveGame();
         }
     }

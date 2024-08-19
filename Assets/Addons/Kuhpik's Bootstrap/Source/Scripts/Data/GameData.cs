@@ -12,5 +12,8 @@ namespace Kuhpik
         public Player Player { get; set; }
         public MainPlayerCamera MainPlayerCamera { get; set; }
         public int Money { get; set; }
+        public float Carry { get; set; }
+        public int CarryLevel { get; set; } = 1;
+        public float MoveSpeed { get; set; }
     }
 }

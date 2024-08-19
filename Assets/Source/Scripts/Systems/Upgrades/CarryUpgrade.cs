@@ -6,11 +6,11 @@ namespace GarbageScaler
     [CreateAssetMenu]
     public class CarryUpgrade : Upgrade
     {
-        public override void ApplyUpgrade(PlayerData playerData)
+        public override void ApplyUpgrade(GameData gameData)
         {
-            if (playerData.Carry >= .6f) return;
+            if (gameData.Carry >= .6f) return;
             
-            playerData.Carry += EffectPerLevel;
+            gameData.Carry += EffectPerLevel;
             Bootstrap.Instance.SaveGame();
         }
     }

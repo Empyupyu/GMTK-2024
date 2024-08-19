@@ -50,7 +50,7 @@ namespace GarbageScaler
                 {
                     _target = colliders[0].GetComponent<Rigidbody>();
                     _startTargerMass = _target.mass;
-                    _target.mass = _startTargerMass * (1 - Bootstrap.Instance.PlayerData.Carry);
+                    _target.mass = _startTargerMass * (1 - Bootstrap.Instance.GameData.Carry);
                     _craneController.GetCrane().DOLocalMoveY(0.7f, .1f).OnComplete(() =>
                     {
                         _grabberBone.gameObject.AddComponent<FixedJoint>().connectedBody = _target;

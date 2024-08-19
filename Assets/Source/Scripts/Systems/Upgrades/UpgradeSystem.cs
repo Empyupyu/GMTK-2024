@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Kuhpik;
 using Supyrb;
 using UnityEngine;
@@ -21,12 +20,12 @@ namespace GarbageScaler
 
         private void UpgradeSpeed()
         {
-            _speedUpgrade?.ApplyUpgrade(player);
+            _speedUpgrade.ApplyUpgrade(game);
         }
         
         private void UpgradeCarry()
         {
-            _carryUpgrade?.ApplyUpgrade(player);
+            _carryUpgrade.ApplyUpgrade(game);
         }
     }
 }

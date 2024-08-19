@@ -11,11 +11,19 @@ namespace GarbageScaler.Systems.Game
         public override void OnInit()
         {
             Signals.Get<AddMoneySignal>().AddListener(AddMoney);
+            Signals.Get<RemoveMoneySignal>().AddListener(RemoveMoney);
         }
         
         private void AddMoney(int money)
         {
             var updatedMoney = game.Money + money;
+            screen.MoneyText.DOCounter(game.Money, updatedMoney, 0.5f);
+            game.Money = updatedMoney;
+        }
+        
+        private void RemoveMoney(int money)
+        {
+            var updatedMoney = game.Money - money;
             screen.MoneyText.DOCounter(game.Money, updatedMoney, 0.5f);
             game.Money = updatedMoney;
         }

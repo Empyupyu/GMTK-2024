@@ -7,6 +7,6 @@ namespace GarbageScaler
     {
         [field: SerializeField] public float EffectPerLevel;
         
-        public abstract void ApplyUpgrade(PlayerData playerData);
+        public abstract void ApplyUpgrade(GameData gameData);
     }
 }
