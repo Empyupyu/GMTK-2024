@@ -659,6 +659,7 @@ MonoBehaviour:
   _maximumPositionY: 6.139466
   _minimumPositionX: -3.6
   _maximumPositionX: 3.6
+  TESTVEK: {x: 0, y: 0, z: 0}
 --- !u!153 &1219195934
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -889,12 +890,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _grabberPoint: {fileID: 1403274042887495939}
+  _grabberBone: {fileID: 0}
   _craneController: {fileID: 1767315813274638907}
-  _fixedJoint: {fileID: 3187575103743683234}
   _collider: {fileID: 7821184823228758189}
   _carControl: {fileID: 3204592713993016856}
   _grabDistance: 1
   _grabPower: 0
+  _grasSphereCastRadius: 0.2
   _garbageLayerMask: 6
 --- !u!54 &6292731303976926167
 Rigidbody:
@@ -1963,9 +1965,7 @@ GameObject:
   - component: {fileID: 4416099266299356405}
   - component: {fileID: 1994282501325764979}
   - component: {fileID: 8644229010557994191}
-  - component: {fileID: 8963587515754552005}
   - component: {fileID: 9124249025797211805}
-  - component: {fileID: 1996988502}
   m_Layer: 0
   m_Name: Grabber Component
   m_TagString: Untagged
@@ -2001,12 +2001,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _grabberPoint: {fileID: 4416099266299356405}
+  _grabberBone: {fileID: 5563674213589771848}
   _craneController: {fileID: 1767315813274638907}
-  _fixedJoint: {fileID: 8963587515754552005}
   _collider: {fileID: 9124249025797211805}
   _carControl: {fileID: 3204592713993016856}
   _grabDistance: 1
   _grabPower: 0
+  _grasSphereCastRadius: 0.2
   _garbageLayerMask: 6
 --- !u!54 &8644229010557994191
 Rigidbody:
@@ -2024,21 +2025,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!138 &8963587515754552005
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042293986137232492}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 55555
-  m_ConnectedMassScale: 55555
 --- !u!135 &9124249025797211805
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2052,102 +2038,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.005
   m_Center: {x: 0, y: 0, z: -0.002}
---- !u!153 &1996988502
-ConfigurableJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6042293986137232492}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 1, y: 0, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  serializedVersion: 2
-  m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
-  m_LinearLimitSpring:
-    spring: 0
-    damper: 0
-  m_LinearLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_AngularXLimitSpring:
-    spring: 0
-    damper: 0
-  m_LowAngularXLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_HighAngularXLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_AngularYZLimitSpring:
-    spring: 0
-    damper: 0
-  m_AngularYLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_AngularZLimit:
-    limit: 0
-    bounciness: 0
-    contactDistance: 0
-  m_TargetPosition: {x: 0, y: 0, z: 0}
-  m_TargetVelocity: {x: 0, y: 0, z: 0}
-  m_XDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_YDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_ZDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 0
-  m_AngularXDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_AngularYZDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_SlerpDrive:
-    serializedVersion: 3
-    positionSpring: 0
-    positionDamper: 0
-    maximumForce: 3.4028233e+38
-  m_ProjectionMode: 0
-  m_ProjectionDistance: 0.1
-  m_ProjectionAngle: 180
-  m_ConfiguredInWorldSpace: 0
-  m_SwapBodies: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!1 &6123638546785932690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,12 +3132,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _grabberPoint: {fileID: 7592883706155373676}
+  _grabberBone: {fileID: 0}
   _craneController: {fileID: 1767315813274638907}
-  _fixedJoint: {fileID: 2781826404597279999}
   _collider: {fileID: 3496352045761689235}
   _carControl: {fileID: 3204592713993016856}
   _grabDistance: 1
   _grabPower: 0
+  _grasSphereCastRadius: 0.2
   _garbageLayerMask: 6
 --- !u!54 &5617598782270490866
 Rigidbody:
@@ -4177,9 +4068,9 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 0, y: 0, z: 0}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
+  m_ZMotion: 1
   m_AngularXMotion: 1
   m_AngularYMotion: 1
   m_AngularZMotion: 1
@@ -4345,9 +4236,9 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 1.9206547e-10, y: 0.0040599518, z: -0.0000000146683306}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
+  m_ZMotion: 1
   m_AngularXMotion: 2
   m_AngularYMotion: 2
   m_AngularZMotion: 2
@@ -4440,6 +4331,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animationBone: {fileID: 4058645292260756025}
   _physicsBone: {fileID: 6170668032499460915}
+--- !u!4 &5563674213589771848 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4969627428700934133, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
+  m_PrefabInstance: {fileID: 702999047820356029}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6155471295413847293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6678043779347557696, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
@@ -4489,9 +4385,9 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 6.787319e-10, y: 0.013296152, z: -0.000000005122274}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
+  m_ZMotion: 1
   m_AngularXMotion: 2
   m_AngularYMotion: 2
   m_AngularZMotion: 2
@@ -4633,9 +4529,9 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 4.9336923e-10, y: 0.013145788, z: -9.313226e-10}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
+  m_ZMotion: 1
   m_AngularXMotion: 2
   m_AngularYMotion: 2
   m_AngularZMotion: 2
@@ -4782,9 +4678,9 @@ ConfigurableJoint:
   m_ConnectedAnchor: {x: 3.503034e-10, y: 0.0135158915, z: -0.000000004656613}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
-  m_XMotion: 2
-  m_YMotion: 2
-  m_ZMotion: 2
+  m_XMotion: 1
+  m_YMotion: 1
+  m_ZMotion: 1
   m_AngularXMotion: 2
   m_AngularYMotion: 2
   m_AngularZMotion: 2

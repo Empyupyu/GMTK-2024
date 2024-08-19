@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6683175522967536407}
   - component: {fileID: 6654749561377473968}
   - component: {fileID: 6654749561377473969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Prop Pallet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

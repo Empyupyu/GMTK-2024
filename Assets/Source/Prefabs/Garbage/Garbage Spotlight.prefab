@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9030371587533188962}
   - component: {fileID: 1867399990642904612}
   - component: {fileID: 1867399990642904603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

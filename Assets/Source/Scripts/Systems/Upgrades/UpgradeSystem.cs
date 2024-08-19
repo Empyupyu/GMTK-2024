@@ -1,39 +1,32 @@
 using System.Collections.Generic;
 using Kuhpik;
+using Supyrb;
 using UnityEngine;
 
 namespace GarbageScaler
 {
     public class UpgradeSystem : GameSystem
     {
+        [SerializeField] private CarryUpgrade _carryUpgrade;
+        [SerializeField] private SpeedUpgrade _speedUpgrade;
+        
         public override void OnInit()
         {
-            
-        }
-    }
+            Signals.Get<UpgradeCarrySignal>().AddListener(UpgradeCarry);
+            Signals.Get<UpgradeSpeedSignal>().AddListener(UpgradeSpeed);
 
-    public abstract class Upgrade : ScriptableObject
-    {
-        [field: SerializeField] public float EffectPerLevel;
-        
-        public abstract void ApplyUpgrade(PlayerData playerData);
-    }
-    
-    public class CarryUpgrade : Upgrade
-    {
-        public override void ApplyUpgrade(PlayerData playerData)
-        {
-            playerData.Carry += EffectPerLevel;
-            Bootstrap.Instance.SaveGame();
+            UpgradeCarry();
+            UpgradeCarry();
         }
-    }
-    
-    public class SpeedUpgrade : Upgrade
-    {
-        public override void ApplyUpgrade(PlayerData playerData)
+
+        private void UpgradeSpeed()
         {
-            playerData.MoveSpeed += EffectPerLevel;
-            Bootstrap.Instance.SaveGame();
+            _speedUpgrade?.ApplyUpgrade(player);
+        }
+        
+        private void UpgradeCarry()
+        {
+            _carryUpgrade?.ApplyUpgrade(player);
         }
     }
 }

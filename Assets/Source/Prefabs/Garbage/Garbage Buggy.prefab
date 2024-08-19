@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -3494813302637181481}
   - component: {fileID: 8907694348406099345}
   - component: {fileID: 4699235232695396803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Buggy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

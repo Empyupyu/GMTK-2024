@@ -109,6 +109,11 @@
      <Compile Include="Assets\Source\Scripts\Systems\Ative Ragdoll Bones\PhysicsBone.cs" />
      <Compile Include="Assets\Source\Scripts\UnityTools\ScenePhysicsTool.cs" />
      <Compile Include="Assets\Fancy Footsteps\Example\ExampleAssets\ActivateAndDeactivateForExample.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSpeedSignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeCarrySignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\SpeedUpgrade.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\CarryUpgrade.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\Upgrade.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Environments" />

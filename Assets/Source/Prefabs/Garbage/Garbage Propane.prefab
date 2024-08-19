@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 16276104186468671}
   - component: {fileID: 5028018702408912644}
   - component: {fileID: 4548429255598640223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Propane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

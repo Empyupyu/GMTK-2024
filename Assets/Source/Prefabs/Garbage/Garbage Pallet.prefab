@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3546551487351112171}
   - component: {fileID: 3590557632276442196}
   - component: {fileID: 3590557632276442197}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Pallet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5746046823711586228}
   - component: {fileID: 5717398769366456759}
   - component: {fileID: 5717398769366456756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Wheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}

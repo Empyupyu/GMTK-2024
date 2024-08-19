@@ -18,6 +18,11 @@ public class CraneController : MonoBehaviour
     [SerializeField] private float _minimumPositionX;
     [SerializeField] private float _maximumPositionX;
 
+    public Transform GetCrane()
+    {
+        return _targetPoint;
+    }
+    
     public void SetPosition(Vector3 pos)
     {
         // pos.x = Mathf.Clamp(pos.x, _minimumPositionX, _maximumPositionX);
@@ -25,11 +30,18 @@ public class CraneController : MonoBehaviour
         // pos.z = Mathf.Clamp(pos.z, _minimumPositionZ, _maximumPositionZ);
         //
         // _targetPoint.DOLocalMove(pos, 1f);
-        _targetPoint.DOMove(pos, 1f);
+     
     }
+
+    public Vector3 TESTVEK;
     
     void Update()
     {
+        // if (Input.GetKeyDown(KeyCode.Z))
+        // {
+        //     _targetPoint.DOMove(TESTVEK, 1f);
+        // }
+        
         float vInput = 0;
 
         if (Input.GetKey(KeyCode.UpArrow))

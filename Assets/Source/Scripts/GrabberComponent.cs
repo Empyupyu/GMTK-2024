@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
+using Kuhpik;
 using UnityEngine;
 
 namespace GarbageScaler
@@ -7,16 +9,19 @@ namespace GarbageScaler
     public class GrabberComponent : MonoBehaviour
     {
         [SerializeField] private Transform _grabberPoint;
+        [SerializeField] private Transform _grabberBone;
         [SerializeField] private CraneController _craneController;
-        [SerializeField] private FixedJoint _fixedJoint;
         [SerializeField] private Collider _collider;
         [SerializeField] private CarControl _carControl;
         [SerializeField] private float _grabDistance;
         [SerializeField] private float _grabPower;
+        [SerializeField] private float _grasSphereCastRadius = .2f;
         [SerializeField] private int _garbageLayerMask;
 
         private bool _isGrab;
-        private Rigidbody _target;
+        private Rigidbody _target; 
+        private float _startTargerMass;
+        
         void Start()
         {
             _garbageLayerMask = 1 << 6;
@@ -25,42 +30,35 @@ namespace GarbageScaler
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyUp(KeyCode.LeftAlt))
-            {
-                _isGrab = false;
-                _fixedJoint.connectedBody = null;
-                _target = null;
-                _collider.enabled = true;
-            }
-            
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                if (_isGrab)
+                {
+                    _isGrab = false;
+                    Destroy(_grabberBone.GetComponent<FixedJoint>());
+                    _target.mass = _startTargerMass;
+                    _target = null;
+                    return;
+                }
+                
                 Ray ray = new Ray(_grabberPoint.position, _grabberPoint.forward);
                 Debug.DrawRay(ray.origin, ray.direction, Color.red, 5);
 
-                if (Physics.Raycast(ray, out var hit, _grabDistance, _garbageLayerMask))
+                var colliders = Physics.OverlapSphere(_grabberPoint.position, _grasSphereCastRadius, _garbageLayerMask);
+                
+                if (colliders.Length > 0)
                 {
-                    if (hit.collider)
+                    _target = colliders[0].GetComponent<Rigidbody>();
+                    _startTargerMass = _target.mass;
+                    _target.mass = _startTargerMass * (1 - Bootstrap.Instance.PlayerData.Carry);
+                    _craneController.GetCrane().DOLocalMoveY(0.7f, .1f).OnComplete(() =>
                     {
-                        _craneController.SetPosition(hit.point);
-                        // hit.collider.GetComponent<Rigidbody>().centerOfMass = hit.point;
-                        // hit.collider.GetComponent<Rigidbody>().Ce = hit.point;
+                        _grabberBone.gameObject.AddComponent<FixedJoint>().connectedBody = _target;
+                    });
 
-                        _target = hit.collider.GetComponent<Rigidbody>();
-                        // _target.transform.parent = transform;
-                        // _target.isKinematic = true;
-                        _collider.enabled = false;
-                        _fixedJoint.connectedBody = _target;
-                        _isGrab = true;
-                        // hit.collider.i
-                    }
+                    _isGrab = true;
                 }
             }
-
-     
-            // _target.velocity = new Vector3(_carControl.rigidBody.velocity.x, _target.velocity .y,_carControl.rigidBody.velocity.z);
-            // _target.position =
-            //     Vector3.MoveTowards(_target.position, _grabberPoint.position, _grabPower * Time.deltaTime);
         }
     }
 }

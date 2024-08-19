@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 6131821596061001776}
   - component: {fileID: 64830528090694945}
   - component: {fileID: 64830528090694944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}

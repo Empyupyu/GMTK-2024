@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3571341608392909920}
   - component: {fileID: 431645681685485917}
   - component: {fileID: 6144094855468204990}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}

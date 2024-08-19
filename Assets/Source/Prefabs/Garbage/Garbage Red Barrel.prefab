@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 513638827349187183}
   - component: {fileID: 7313265391917162611}
   - component: {fileID: 1860473092294766807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Garbage Red Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
