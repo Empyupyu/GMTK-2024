@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4090057083578430}
   - component: {fileID: 33638959841711246}
   - component: {fileID: 23636734963167240}
-  - component: {fileID: 52742597737339151}
+  - component: {fileID: 7036476812437037956}
   m_Layer: 0
   m_Name: SM_Env_Grass_Square_01
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &52742597737339151
+--- !u!64 &7036476812437037956
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
