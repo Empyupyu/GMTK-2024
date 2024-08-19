@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30558c7b914a48dbadb0c16d7ef37205, type: 3}
   m_Name: New Carry Upgrade
   m_EditorClassIdentifier: 
-  EffectPerLevel: 0.15
+  EffectPerLevel: 0.3
