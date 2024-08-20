@@ -15,5 +15,9 @@ namespace Kuhpik
         public float Carry { get; set; }
         public int CarryLevel { get; set; } = 1;
         public float MoveSpeed { get; set; }
+        
+        // Volume
+        public float MusicVolume { get; set; }
+        public float SoundsVolume { get; set; }
     }
 }

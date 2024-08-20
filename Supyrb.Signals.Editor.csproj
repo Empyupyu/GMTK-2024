@@ -41,19 +41,19 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsEditorUtilities.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalEditorPlayModeHandler.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\Libraries\SerializableSystemType.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsTreeViewItems.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsEditorWindow.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsAboutWindow.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsEditorDatabase.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalLog.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsTreeViewItem.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsTreeView.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalReflectionHelper.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalLogViewDrawer.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalListenerViewDrawer.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsEditorUtilities.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\Libraries\SerializableSystemType.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsTreeViewItems.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsAboutWindow.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsEditorDatabase.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalLog.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Editor\SignalsTreeViewItem.cs" />
      <Folder Include="Assets\Addons\Signals\Scripts\Editor\Libraries" />
      <Folder Include="Assets\Addons\Signals\Scripts\Editor" />
      <None Include="Assets\Addons\Signals\Scripts\Editor\Supyrb.Signals.Editor.asmdef" />

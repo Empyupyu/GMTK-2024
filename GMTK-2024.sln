@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaughtyAttributes.Editor", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MackySoft.SerializeReferenceExtensions.Editor", "MackySoft.SerializeReferenceExtensions.Editor.csproj", "{0067ce23-611b-b388-717c-d5cb89792ccb}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{07d66e65-179c-316a-40a5-7e15999ba171}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supyrb.Signals.Editor", "Supyrb.Signals.Editor.csproj", "{97cb3908-9682-a79b-d8fb-519e309c93dd}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{07d66e65-179c-316a-40a5-7e15999ba171}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +42,10 @@ Global
 		{27b5b565-279e-22d0-8c46-033125b2b80a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0067ce23-611b-b388-717c-d5cb89792ccb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0067ce23-611b-b388-717c-d5cb89792ccb}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07d66e65-179c-316a-40a5-7e15999ba171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07d66e65-179c-316a-40a5-7e15999ba171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97cb3908-9682-a79b-d8fb-519e309c93dd}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97cb3908-9682-a79b-d8fb-519e309c93dd}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07d66e65-179c-316a-40a5-7e15999ba171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07d66e65-179c-316a-40a5-7e15999ba171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

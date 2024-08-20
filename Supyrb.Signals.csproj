@@ -42,10 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Addons\Signals\Scripts\Runtime\ASignal.cs" />
+     <Compile Include="Assets\Addons\Signals\Scripts\Runtime\Signal.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Runtime\ABaseSignal.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Runtime\Signals.cs" />
      <Compile Include="Assets\Addons\Signals\Scripts\Runtime\OrderedList.cs" />
-     <Compile Include="Assets\Addons\Signals\Scripts\Runtime\Signal.cs" />
      <Folder Include="Assets\Addons\Signals\Scripts\Runtime" />
      <None Include="Assets\Addons\Signals\Scripts\Runtime\Supyrb.Signals.asmdef" />
      <Reference Include="UnityEngine">

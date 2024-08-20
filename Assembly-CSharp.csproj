@@ -41,87 +41,91 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\CameraInstaller.cs" />
      <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\LogExtensions.cs" />
      <Compile Include="Assets\Source\Scripts\Extensions\DotWeenExtensions.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeCarrySignal.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\UIManager.cs" />
+     <Compile Include="Assets\Source\Scripts\UIScreens\PlayerStatsUIScreen.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\MonoBehaviours\CollisionListener.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Ative Ragdoll Bones\PhysicsBone.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.LifeCycle.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\InjectionsInstaller.cs" />
+     <Compile Include="Assets\Source\Scripts\UIScreens\ShopUIScreen.cs" />
+     <Compile Include="Assets\Source\Scripts\Shop.cs" />
+     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\AddMoneySignal.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\ReflectionExtensions.cs" />
+     <Compile Include="Assets\Source\Scripts\Garbage.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\CollectionExtensions.cs" />
+     <Compile Include="Assets\Source\Scripts\GrabberComponent.cs" />
+     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Tools\Screenshoter.cs" />
+     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Source\Scripts\GarbageConsumer.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.Data.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Snippets\Singleton\DontDestroySingleton.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\FSM\FSMProcessor.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System\GameSystem.cs" />
+     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+     <Compile Include="Assets\Source\Scripts\CarControl.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\PlayerMovementSystem.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Interfaces\UI\IUIScreen.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\SaveExtension.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\PlayerExitedShopSignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Loading\InitSystem.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Bootstrap.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\Installer.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\PlayerDataInstaller.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\MonoBehaviours\CollisionListener2D.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System\GameSystemWithScreen.cs" />
+     <Compile Include="Assets\Source\Scripts\ProcessedGarbage.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\SpeedUpgrade.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSpeedSignal.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\CameraInstaller.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\LogExtensions.cs" />
      <Compile Include="Assets\Source\Scripts\WheelControl.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Data\GameData.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Data\PlayerData.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameStateID.cs" />
      <Compile Include="Assets\Source\Scripts\Player.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Interfaces\Systems\IGameSystem.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\UIManager.cs" />
-     <Compile Include="Assets\Source\Scripts\UIScreens\PlayerStatsUIScreen.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\MonoBehaviours\CollisionListener.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\LoadingEndSystem.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Ative Ragdoll Bones\PhysicsBone.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Snippets\Singleton\Singleton.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.LifeCycle.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\Upgrade.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\CommandProcessor.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\InjectionsInstaller.cs" />
-     <Compile Include="Assets\Source\Scripts\UIScreens\ShopUIScreen.cs" />
-     <Compile Include="Assets\Source\Scripts\Shop.cs" />
      <Compile Include="Assets\Fancy Footsteps\Example\ExampleAssets\ActivateAndDeactivateForExample.cs" />
      <Compile Include="Assets\Source\Scripts\GameSignals\PlayerEnteredShopSignal.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameStateComponent.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Abstracts\UIScreen.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\MathExtentions.cs" />
-     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleAudio.cs" />
-     <Compile Include="Assets\Source\Scripts\GameSignals\AddMoneySignal.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\IInstaller.cs" />
      <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Tools\DatasDrawer.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\ReflectionExtensions.cs" />
      <Compile Include="Assets\Source\Scripts\GameSignals\GarbageCollectedSignal.cs" />
-     <Compile Include="Assets\Source\Scripts\Garbage.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\PlayerSpawnSystem.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\CollectionExtensions.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Game\MoneySystem.cs" />
-     <Compile Include="Assets\Source\Scripts\GrabberComponent.cs" />
-     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModulePhysics.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Tools\Screenshoter.cs" />
-     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModulePhysics2D.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\FramerokExtensions.cs" />
-     <Compile Include="Assets\Source\Scripts\GarbageConsumer.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.Data.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Snippets\Singleton\DontDestroySingleton.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\GameConfig.cs" />
      <Compile Include="Assets\Source\Scripts\CraneController.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\FSM\FSMProcessor.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System\GameSystem.cs" />
-     <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\AudioSystem.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Game\ShopSystem.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSystem.cs" />
-     <Compile Include="Assets\Source\Scripts\CarControl.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\RemoveMoneySignal.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Game\GarbageProcessorSystem.cs" />
      <Compile Include="Assets\Source\Scripts\UnityTools\ScenePhysicsTool.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Game\PlayerMovementSystem.cs" />
      <Compile Include="Assets\Source\Scripts\MainPlayerCamera.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Interfaces\UI\IUIScreen.cs" />
      <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleSprite.cs" />
-     <Compile Include="Assets\Source\Scripts\GameSignals\PlayerExitedShopSignal.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\SaveExtension.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Loading\InitSystem.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game State\GameState.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Bootstrap.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\Installer.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\PlayerDataInstaller.cs" />
+     <Compile Include="Assets\Source\Scripts\UIScreens\PauseMenuUIScreen.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\CarryUpgrade.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\GameStateInstaller.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\MonoBehaviours\CollisionListener2D.cs" />
      <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleUI.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Loading\CameraLoadingSystem.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Game System\GameSystemWithScreen.cs" />
-     <Compile Include="Assets\Source\Scripts\ProcessedGarbage.cs" />
-     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces\ICommand.cs" />
      <Compile Include="Assets\Source\Scripts\UIScreens\ShopUpgradeUI.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\Upgrade.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeCarrySignal.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\SpeedUpgrade.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSpeedSignal.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Upgrades\CarryUpgrade.cs" />
-     <Compile Include="Assets\Source\Scripts\GameSignals\RemoveMoneySignal.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Game\AudioSystem.cs" />
+     <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces\ICommand.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeMusicVolumeSignal.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeSoundsVolumeSignal.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\PauseSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Environments" />
@@ -924,14 +928,20 @@
      <Reference Include="Unity.Burst.Editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.UI">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <Reference Include="Unity.InputSystem">
+     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -957,6 +967,9 @@
      <Reference Include="com.unity.cinemachine.editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InputSystem.ForUI">
+     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Services.Core.Environments">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
      </Reference>
@@ -968,15 +981,6 @@
      </Reference>
      <Reference Include="Unity.Animation.Rigging.Editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem.ForUI">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

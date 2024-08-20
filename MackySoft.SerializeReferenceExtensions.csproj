@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\Runtime\AddTypeMenuAttribute.cs" />
      <Compile Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\Runtime\SubclassSelectorAttribute.cs" />
+     <Compile Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\Runtime\AddTypeMenuAttribute.cs" />
      <Folder Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\Runtime" />
      <None Include="Assets\Addons\MackySoft\MackySoft.SerializeReferenceExtensions\Runtime\MackySoft.SerializeReferenceExtensions.asmdef" />
      <Reference Include="UnityEngine">
