@@ -52,6 +52,7 @@
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\InjectionsInstaller.cs" />
      <Compile Include="Assets\Source\Scripts\UIScreens\ShopUIScreen.cs" />
      <Compile Include="Assets\Source\Scripts\Shop.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeSoundsVolumeSignal.cs" />
      <Compile Include="Assets\Addons\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\Source\Scripts\GameSignals\AddMoneySignal.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\ReflectionExtensions.cs" />
@@ -83,6 +84,7 @@
      <Compile Include="Assets\Source\Scripts\Systems\Upgrades\SpeedUpgrade.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Upgrades\UpgradeSpeedSignal.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Installers\CameraInstaller.cs" />
+     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeMusicVolumeSignal.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\LogExtensions.cs" />
      <Compile Include="Assets\Source\Scripts\WheelControl.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Data\GameData.cs" />
@@ -107,6 +109,7 @@
      <Compile Include="Assets\Source\Scripts\Systems\Game\MoneySystem.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Extensions\FramerokExtensions.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\GameConfig.cs" />
+     <Compile Include="Assets\Source\Scripts\Systems\Game\PauseSystem.cs" />
      <Compile Include="Assets\Source\Scripts\CraneController.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Game\AudioSystem.cs" />
      <Compile Include="Assets\Source\Scripts\Systems\Game\ShopSystem.cs" />
@@ -123,9 +126,6 @@
      <Compile Include="Assets\Source\Scripts\Systems\Loading\CameraLoadingSystem.cs" />
      <Compile Include="Assets\Source\Scripts\UIScreens\ShopUpgradeUI.cs" />
      <Compile Include="Assets\Addons\Kuhpik&apos;s Bootstrap\Source\Scripts\Patterns\Command\Interfaces\ICommand.cs" />
-     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeMusicVolumeSignal.cs" />
-     <Compile Include="Assets\Source\Scripts\GameSignals\ChangeSoundsVolumeSignal.cs" />
-     <Compile Include="Assets\Source\Scripts\Systems\Game\PauseSystem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Source\Scripts" />
      <Folder Include="Assets\Addons\PolygonBattleRoyale\Prefabs\Environments" />
@@ -959,9 +959,6 @@
      <Reference Include="UnityEditor.UI">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
@@ -991,9 +988,6 @@
      </Reference>
      <Reference Include="com.unity.cinemachine.editor">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem.ForUI">
-     <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Services.Core.Environments">
      <HintPath>D:\Unity\Unity Projects\GMTK-2024\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
