@@ -11,6 +11,8 @@ namespace GarbageScaler.UIScreens
         [field: SerializeField] public ShopUpgradeUI CraneUpgrade { get; private set; }
         
         private const float UpgradeScaleTime = 0.5f;
+        
+        private bool _isOpened = false;
 
         public override void Subscribe()
         {
@@ -20,8 +22,13 @@ namespace GarbageScaler.UIScreens
 
         public override void Open()
         {
+            if (_isOpened)
+                return;
+            
             base.Open();
             RefreshUpgrades();
+
+            _isOpened = true;
             
             CraneUpgrade.transform.localScale = Vector3.zero;
             CraneUpgrade.transform.DOScale(Vector3.one, UpgradeScaleTime);
@@ -31,6 +38,8 @@ namespace GarbageScaler.UIScreens
         {
             CraneUpgrade.transform.DOScale(Vector3.zero, UpgradeScaleTime)
                 .OnComplete(base.Close);
+            
+            _isOpened = false;
         }
 
         private void OnCraneUpgrade()
