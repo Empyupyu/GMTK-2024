@@ -27,5 +27,9 @@ namespace Kuhpik
         [field: SerializeField]
         [field: BoxGroup("Prefabs")]
         public ProcessedGarbage ProcessedGarbagePrefab { get; private set; }
+        
+        [field: SerializeField]
+        [field: BoxGroup("Prefabs")]
+        public ParticleSystem ProcessedGarbageVfxPrefab { get; private set; }
     }
 }

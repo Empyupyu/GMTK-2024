@@ -17,3 +17,4 @@ MonoBehaviour:
   <RotationSpeed>k__BackingField: 5
   <PlayerPrefab>k__BackingField: {fileID: 6493817565910562113, guid: b86d92ee1b184c745b42052eb1427608, type: 3}
   <ProcessedGarbagePrefab>k__BackingField: {fileID: 8058633242444789520, guid: 0ad9932a51fee48479961fecc8e98773, type: 3}
+  <ProcessedGarbageVfxPrefab>k__BackingField: {fileID: 198587509341518822, guid: 2b79ec10654f26344816627d7515c1df, type: 3}

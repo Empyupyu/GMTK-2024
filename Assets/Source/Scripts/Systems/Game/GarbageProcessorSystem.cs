@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using GarbageScaler.GameSignals;
+﻿using GarbageScaler.GameSignals;
 using Kuhpik;
 using Supyrb;
 using UnityEngine;
@@ -12,7 +11,7 @@ namespace GarbageScaler.Systems.Game
         {
             Signals.Get<GarbageCollectedSignal>().AddListener(ProcessGarbage);
         }
-        
+
         private void ProcessGarbage(GarbageConsumer garbageConsumer, Garbage garbage)
         {
             ConsumeGarbage(garbage);
@@ -22,12 +21,16 @@ namespace GarbageScaler.Systems.Game
         private void ConsumeGarbage(Garbage garbage)
         {
             Signals.Get<AddMoneySignal>().Dispatch(garbage.Value);
+            var vfx = Instantiate(config.ProcessedGarbageVfxPrefab, garbage.transform.position,
+                Quaternion.Euler(-90, 0, 0));
+
+            Destroy(vfx.gameObject, 4);
             Destroy(garbage.gameObject);
         }
 
         private void CreateProcessedGarbage(GarbageConsumer garbageConsumer)
         {
-            var processedGarbage = Instantiate(config.ProcessedGarbagePrefab, 
+            var processedGarbage = Instantiate(config.ProcessedGarbagePrefab,
                 garbageConsumer.OutputPoint.position, Quaternion.identity);
 
             var shootVector = new Vector3(Random.Range(-1f, 1), 1, Random.Range(-1f, 1));
