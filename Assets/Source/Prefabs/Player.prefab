@@ -636,7 +636,9 @@ MonoBehaviour:
   steeringRange: 30
   steeringRangeAtMaxSpeed: 10
   centreOfGravityOffset: -1
+  movingSpeedSoundRate: 0.8
   rigidBody: {fileID: 0}
+  Force: {x: 0, y: 0, z: 2500}
 --- !u!114 &1767315813274638907
 MonoBehaviour:
   m_ObjectHideFlags: 0

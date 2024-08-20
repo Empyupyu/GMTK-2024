@@ -1,13 +1,17 @@
+using System;
 using UnityEngine;
 
 public class CarControl : MonoBehaviour
 {
+    public Action OnMove, OnMoveBack, OnIdle; 
+    
     public float motorTorque = 2000;
     public float brakeTorque = 2000;
     public float maxSpeed = 20;
     public float steeringRange = 30;
     public float steeringRangeAtMaxSpeed = 10;
     public float centreOfGravityOffset = -1f;
+    public float movingSpeedSoundRate;
 
     WheelControl[] wheels;
     public Rigidbody rigidBody;
@@ -40,7 +44,20 @@ public class CarControl : MonoBehaviour
         {
             hInput =  Input.GetAxis("Horizontal");
         }
-        
+
+        if (rigidBody.velocity.magnitude > movingSpeedSoundRate && vInput >= 0)
+        {
+            OnIdle?.Invoke();
+            // OnMove?.Invoke();
+        }
+        else if(rigidBody.velocity.magnitude <= 0.5f && vInput == 0)
+        {
+            OnIdle?.Invoke();
+        }
+        else if(rigidBody.velocity.magnitude > movingSpeedSoundRate && vInput < 0)
+        {
+            OnMoveBack?.Invoke();
+        }
 
         // Calculate current speed in relation to the forward direction of the car
         // (this returns a negative number when traveling backwards)
@@ -88,5 +105,12 @@ public class CarControl : MonoBehaviour
                 wheel.WheelCollider.motorTorque = 0;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            rigidBody.AddRelativeForce(Force, ForceMode.Acceleration);
+        }
     }
+
+    public Vector3 Force;
 }
