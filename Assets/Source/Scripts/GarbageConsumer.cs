@@ -12,7 +12,7 @@ namespace GarbageScaler
         {
             var garbage = other.gameObject.GetComponentInParent<Garbage>();
             if (garbage != null)
-                Signals.Get<GarbageCollectedSignal>().Dispatch(this, garbage);
+                Signals.Get<GarbageCollectedSignal>().Dispatch(this, garbage, other.contacts[0].point);
         }
     }
 }

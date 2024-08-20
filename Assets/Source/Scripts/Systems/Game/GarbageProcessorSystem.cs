@@ -12,16 +12,16 @@ namespace GarbageScaler.Systems.Game
             Signals.Get<GarbageCollectedSignal>().AddListener(ProcessGarbage);
         }
 
-        private void ProcessGarbage(GarbageConsumer garbageConsumer, Garbage garbage)
+        private void ProcessGarbage(GarbageConsumer garbageConsumer, Garbage garbage, Vector3 contactPoint)
         {
-            ConsumeGarbage(garbage);
+            ConsumeGarbage(garbage, contactPoint);
             CreateProcessedGarbage(garbageConsumer);
         }
 
-        private void ConsumeGarbage(Garbage garbage)
+        private void ConsumeGarbage(Garbage garbage, Vector3 contactPoint)
         {
             Signals.Get<AddMoneySignal>().Dispatch(garbage.Value);
-            var vfx = Instantiate(config.ProcessedGarbageVfxPrefab, garbage.transform.position,
+            var vfx = Instantiate(config.ProcessedGarbageVfxPrefab, contactPoint,
                 Quaternion.Euler(-90, 0, 0));
 
             Destroy(vfx.gameObject, 4);
