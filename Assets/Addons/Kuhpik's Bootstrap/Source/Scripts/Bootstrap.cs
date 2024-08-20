@@ -62,7 +62,7 @@ namespace Kuhpik
 
         void FixedUpdate()
         {
-            currentState.FixedUpdate();
+            // currentState.FixedUpdate();
         }
 
         public void GameRestart(int sceneIndex)
