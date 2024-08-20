@@ -20,14 +20,14 @@ namespace GarbageScaler.UIScreens
             dialogueWindow.transform.localScale = Vector3.zero;
         }
 
-        private void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
-                ShowDialogueWindow("hello" + Random.Range(0, 100));
-            
-            if (Input.GetMouseButtonDown(1))
-                HideDialogueWindow();
-        }
+        // private void Update()
+        // {
+        //     if (Input.GetMouseButtonDown(0))
+        //         ShowDialogueWindow("hello" + Random.Range(0, 100));
+        //     
+        //     if (Input.GetMouseButtonDown(1))
+        //         HideDialogueWindow();
+        // }
 
         private void ShowDialogueWindow(string text)
         {
