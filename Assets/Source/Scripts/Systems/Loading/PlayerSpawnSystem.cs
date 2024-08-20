@@ -9,7 +9,7 @@ namespace GarbageScaler.Systems.Loading
         
         public override void OnInit()
         {
-            game.Player = Instantiate(config.PlayerPrefab, playerSpawnPoint.position, Quaternion.identity);
+            game.Player = Instantiate(config.PlayerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
         }
     }
 }
