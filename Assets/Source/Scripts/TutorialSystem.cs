@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
+using GarbageScaler.GameSignals;
 using Kuhpik;
+using Supyrb;
 using UnityEngine;
 
 namespace GarbageScaler
@@ -27,8 +29,8 @@ namespace GarbageScaler
             C3?.gameObject.SetActive(false);
             C4?.gameObject.SetActive(false);
             Arrow1?.SetActive(false);
-            Arrow2?.SetActive(false);
-            Arrow3?.SetActive(false);
+            // Arrow2?.SetActive(false);
+            // Arrow3?.SetActive(false);
             // Arrow4?.SetActive(false);
 
             StartCoroutine(TutorialLoop());
@@ -60,12 +62,16 @@ namespace GarbageScaler
             
             yield return new WaitForSeconds(.5f);
             
-            Arrow1.SetActive(true);
+            // Arrow1.SetActive(true);
+            
+            // Signals.Get<ShowDialogueWindowSignal>().Dispatch("какой-то текст");
             //Камера игрока
             //включаем у игрока все кнопки
             //Включаю стрелку и камеру на стрелку
             //текст описывающий задачу
             yield return new WaitForSeconds(4);
+            
+            // Signals.Get<ShowDialogueWindowSignal>().Dispatch("какой-то текст");
             
             //ждем пока плеер доедет до любого из предметов и подберет мусор
             yield return new WaitUntil(() => _playerCompletedFirstStep);

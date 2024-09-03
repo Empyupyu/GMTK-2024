@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetPoint: {fileID: 1309293925454967848}
+  _kinematicModel: {fileID: 7831115062272915659}
   _moveHorizontalRate: 4
   _moveVerticalRate: 4
   _moveZRate: 4
@@ -661,6 +662,7 @@ MonoBehaviour:
   _maximumPositionY: 6.139466
   _minimumPositionX: -3.6
   _maximumPositionX: 3.6
+  _maxDistance: 9
   TESTVEK: {x: 0, y: 0, z: 0}
 --- !u!153 &1219195934
 ConfigurableJoint:
@@ -5431,6 +5433,11 @@ Transform:
 --- !u!4 &7649744608809588378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1625174402747093846, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
+  m_PrefabInstance: {fileID: 8981476949868299724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7831115062272915659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1155498877080485127, guid: 5db084d1102921d44a6040e88abb8687, type: 3}
   m_PrefabInstance: {fileID: 8981476949868299724}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7916733695714665120 stripped

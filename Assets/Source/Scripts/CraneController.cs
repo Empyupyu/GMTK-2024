@@ -1,10 +1,12 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class CraneController : MonoBehaviour
 {
-    [SerializeField] private Transform _targetPoint;
+    [SerializeField] private Transform _targetPoint; 
+    [SerializeField] private Transform _kinematicModel;
     [SerializeField] private float _moveHorizontalRate = 2;
     [SerializeField] private float _moveVerticalRate = 1;
     [SerializeField] private float _moveZRate = 1;
@@ -17,6 +19,15 @@ public class CraneController : MonoBehaviour
     
     [SerializeField] private float _minimumPositionX;
     [SerializeField] private float _maximumPositionX;
+    [SerializeField] private float _maxDistance;
+
+    private GameObject _fakeCranePoint;
+    
+    private void Start()
+    {
+        _fakeCranePoint = new GameObject("Fake Crane Point");
+        _fakeCranePoint.transform.parent = transform;
+    }
 
     public Transform GetCrane()
     {
@@ -78,10 +89,31 @@ public class CraneController : MonoBehaviour
 
         Vector3 targetPosition = _targetPoint.localPosition + new Vector3(hInput * _moveHorizontalRate, vInput * _moveVerticalRate, zAxis * _moveZRate) * Time.deltaTime;
         
-        targetPosition.x = Mathf.Clamp(targetPosition.x, _minimumPositionX, _maximumPositionX);
-        targetPosition.y = Mathf.Clamp(targetPosition.y, _minimumPositionY, _maximumPositionY);
-        targetPosition.z = Mathf.Clamp(targetPosition.z, _minimumPositionZ, _maximumPositionZ);
+        Debug.Log("Distance " + Vector3.Distance(_kinematicModel.position, _targetPoint.position));
+
+        // _fakeCranePoint.transform.localPosition = targetPosition;
+
+        var checkMoving = transform.TransformPoint(targetPosition);
+        
+        // if(Vector3.Distance(_kinematicModel.position, _targetPoint.position) >= _maxDistance) return;
+        if (Vector3.Distance(_kinematicModel.position, checkMoving) >= _maxDistance)
+        {
+            if (lastMaxDistance > Vector3.Distance(_kinematicModel.position, checkMoving))
+            {
+                lastMaxDistance = Vector3.Distance(_kinematicModel.position, checkMoving);
+            }
+            else
+            { 
+                return;
+            }
+        }
+        
+        // targetPosition.x = Mathf.Clamp(targetPosition.x, _minimumPositionX, _maximumPositionX);
+        // targetPosition.y = Mathf.Clamp(targetPosition.y, _minimumPositionY, _maximumPositionY);
+        // targetPosition.z = Mathf.Clamp(targetPosition.z, _minimumPositionZ, _maximumPositionZ);
         
         _targetPoint.localPosition = targetPosition;
     }
+
+    private float lastMaxDistance;
 }

@@ -20,6 +20,12 @@ namespace GarbageScaler.UIScreens
             dialogueWindow.transform.localScale = Vector3.zero;
         }
 
+        private void Start()
+        {
+            Signals.Get<ShowDialogueWindowSignal>().AddListener(ShowDialogueWindow);
+            Signals.Get<HideDialogueWindowSignal>().AddListener(HideDialogueWindow);
+        }
+
         // private void Update()
         // {
         //     if (Input.GetMouseButtonDown(0))
